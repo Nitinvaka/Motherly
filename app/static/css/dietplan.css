@@ -1,0 +1,204 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+}
+
+
+/* Main Container */
+.main-container {
+  margin-left: 500px;
+  padding: 30px;
+}
+
+.page-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #374151;
+}
+
+.day-section {
+  margin-bottom: 50px;
+}
+
+.day-title {
+  font-size: 22px;
+  color: #4f46e5;
+  margin-bottom: 20px;
+}
+
+.meal {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.meal h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.meal ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.meal ul li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #6b7280;
+}
+/* Sidebar Updated */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #9333ea, #ec4899);
+  color: white;
+  padding: 20px;
+}
+
+.sidebar-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.sidebar-nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav a.active {
+  background: white;
+  color: #9333ea;
+}
+
+/* Main Container */
+.main-container {
+  margin-left: 500px;
+  padding: 30px;
+}
+
+/* Rest of styles remain same for meals, cards, titles */
+
+/* Container */
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #a855f7;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.logo span {
+  font-weight: normal;
+  color: #f3f4f6;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav .active {
+  background: white;
+  color: #9333ea;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px 40px;
+  overflow-y: auto;
+}
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-left: 250px;
+}
+
+.nav-links a {
+  margin-right: 20px;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #9333ea;
+}
+
+.login-button {
+  background: #9333ea;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #7e22ce;
+}

@@ -1,0 +1,84 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 250px; /* because sidebar exists */
+  width: calc(100% - 250px);
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal */
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  width: 450px;
+  max-width: 90%;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.modal-header h2 {
+  font-size: 20px;
+  color: #374151;
+}
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #6b7280;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #9333ea;
+}
+
+/* Subtitle */
+.modal-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.step h3 {
+  font-size: 16px;
+  color: #4f46e5;
+  margin-bottom: 5px;
+}
+.step p {
+  font-size: 14px;
+  color: #374151;
+}

@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+
+{% block title %}  Maternal Approaches  {% endblock %}
+  
+{% block main%}
+
+  <link rel="stylesheet" href="/static/css/maternal.css" />
+  
+    <!-- Page Title -->
+    <section class="section">
+      <h1>Maternal Approaches</h1>
+      <p class="desc">Discover different approaches to maternal care that can help you through pregnancy, delivery, and early motherhood. These evidence-based practices are designed to support both mother and baby during this important journey.</p>
+    
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab active">Prenatal Care</button>
+        <button class="tab">Postnatal Care</button>
+        <button class="tab">Baby Care</button>
+      </div>
+
+      <!-- Cards -->
+      <div class="card-grid">
+        <div class="card">
+          <img src="/static/uploads/first_tri.jpeg" alt="First Trimester" />
+          <div class="card-body">
+            <h3>First Trimester</h3>
+            <p>Essential care during the first 12 weeks of pregnancy, including nutrition, doctor visits, and common symptoms.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/static/uploads/Second_Trimester.webp" alt="Second Trimester" />
+          <div class="card-body">
+            <h3>Second Trimester</h3>
+            <p>Guidance for weeks 13–26, including fetal development, physical changes, and preparations for baby.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/static/uploads/Third_Trimester.webp" alt="Third Trimester" />
+          <div class="card-body">
+            <h3>Third Trimester</h3>
+            <p>Preparing for birth, common discomforts, and final preparations during weeks 27–40.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personalized Plan -->
+      <div class="plan-section">
+        <h2>Personalized Maternal Care Plan</h2>
+        <p>Get a customized care plan tailored to your specific needs and preferences. Our experts will guide you through every step of your maternal journey.</p>
+        <button>Create My Plan</button>
+      </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+{% block title %} Products - MomCare {% endblock %}
+
+{% block main %}
+<!-- <link rel="stylesheet" href="static/css/product.css" /> -->
+<!-- Product Grid -->
+<div class="product-grid">
+  <div class="product-card">
+    <a href=" {{ url_for('views.product_details', product_id = 1) }} ">
+    <img src="static/uploads/diapering.jpg" alt="Diapering & Potty Training"></a>
+    <h3>Diapering & Potty Training</h3>
+  </div>
+  <div class="product-card"><a href=" {{ url_for('views.product_details', product_id = 1) }} ">
+    <img src="static/uploads/bath.jpeg" alt="Bath & Skin Care"></a>
+    <h3>Bath & Skin Care</h3>
+  </div>
+  <div class="product-card"><a href=" {{ url_for('views.product_details', product_id = 1) }} ">
+    <img src="static/uploads/feeding.jpg" alt="Feeding & Nursing"></a>
+    <h3>Feeding & Nursing</h3>
+  </div>
+  <div class="product-card"><a href=" {{ url_for('views.product_details', product_id = 1) }} ">
+    <img src="static/uploads/health.jpg" alt="Health & Safety"></a>
+    <h3>Health & Safety</h3>
+  </div>
+  <div class="product-card"><a href=" {{ url_for('views.product_details', product_id = 1) }} ">
+    <img src="static/uploads/nursery.jpeg" alt="Nursery"></a>
+    <h3>Nursery</h3>
+  </div>
+  <div class="product-card"><a href=" {{ url_for('views.product_details', product_id = 1) }} ">
+    <img src="static/uploads/art.jpg" alt="Art & Hobbies"></a>
+    <h3>Art & Hobbies</h3>
+  </div>
+  <div class="product-card"><a href=" {{ url_for('views.product_details', product_id = 1) }} ">
+    <img src="static/uploads/books.jpeg" alt="Books"></a>
+    <h3>Books</h3>
+  </div>
+  <div class="product-card"><a href=" {{ url_for('views.product_details', product_id = 1) }} ">
+    <img src="static/uploads/school.jpeg" alt="School Supplies"></a>
+    <h3>School Supplies</h3>
+  </div>
+  <div class="product-card"><a href=" {{ url_for('views.product_details', product_id = 1) }} ">
+    <img src="static/uploads/sliding.jpg" alt="Slides, Tents & More"></a>
+    <h3>Slides, Tents & More</h3>
+  </div>
+  <div class="product-card"><a href=" {{ url_for('views.product_details', product_id = 1) }} ">
+    <img src="static/uploads/home.jpg" alt="Home & Living"></a>
+    <h3>Home & Living</h3>
+  </div>
+  <div class="product-card"><a href=" {{ url_for('views.product_details', product_id = 1) }} ">
+    <img src="static/uploads/birthday.jpg" alt="Birthday & Gifts"></a>
+    <h3>Birthday & Gifts</h3>
+  </div>
+  <div class="product-card"><a href=" {{ url_for('views.product_details', product_id = 1) }} ">
+    <img src="static/uploads/electronic.jpg" alt="Electronics & Kids Gadgets"></a>
+    <h3>Electronics & Kids Gadgets</h3>
+  </div>
+</div>
+{% endblock %}

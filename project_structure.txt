@@ -1,0 +1,26 @@
+harshithmanik-mom_me/
+├── app.py                    # Flask application with SQLAlchemy
+├── models.py                 # SQLAlchemy models
+├── static/
+│   ├── css/
+│   │   ├── styles.css     # Main CSS file
+│   │   └── components.css # Component-specific styles
+│   ├── js/
+│   │   ├── main.js        # Main JavaScript
+│   │   ├── toast.js       # Toast notifications
+│   │   └── calendar.js    # Calendar functionality
+│   └── uploads/           # Static assets (images)
+├── templates/
+│   ├── layout.html        # Base HTML template
+│   ├── index.html         # Home page
+│   ├── doctor_consultation.html # Doctor consultation page
+│   ├── exercises.html     # Exercises page
+│   ├── introduction.html  # Introduction page
+│   ├── maternal_approaches.html # Maternal approaches page
+│   ├── products.html      # Products page
+│   ├── videos.html        # Video tutorials page
+│   └── not_found.html     # 404 page
+├── database/
+│   └── db.sqlite3         # SQLite3 database
+├── requirements.txt       # Python dependencies
+└── README.md              # Project documentation

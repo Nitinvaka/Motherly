@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="introduction">
+    <h1 class="text-2xl font-bold mb-6">Introduction to MomCare</h1>
+    <p class="mb-4">MomCare is your trusted companion for maternal and baby care, offering resources, consultations, and products tailored to your needs.</p>
+    <div class="grid grid-cols-3 gap-4 mb-8">
+        <div class="card">
+            <h3 class="font-medium mb-2">Expert Consultations</h3>
+            <p>Book appointments with specialists to ensure the best care for you and your baby.</p>
+        </div>
+        <div class="card">
+            <h3 class="font-medium mb-2">Exercise Programs</h3>
+            <p>Explore tailored exercises for prenatal, postnatal, and bonding with your baby.</p>
+        </div>
+        <div class="card">
+            <h3 class="font-medium mb-2">Quality Products</h3>
+            <p>Shop for trusted maternal and baby products from top brands.</p>
+        </div>
+    </div>
+    <a href="/doctor_consultation" class="btn btn-primary">Get Started</a>
+</div>
+{% endblock %}

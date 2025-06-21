@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}    {% endblock %}</title>
+    <!-- <link rel="stylesheet" href="/static/css/styles.css"> -->
+    <!-- <link rel="stylesheet" href="/static/css/components.css"> -->
+    <script src="/static/js/main.js" defer></script>
+    <script src="/static/js/toast.js" defer></script>
+    <script src="/static/js/calendar.js" defer></script>
+</head>
+<body>
+
+{% if request.path == '/introduction' %}
+    <link rel="stylesheet" href="/static/css/index.css">
+{% elif request.path == '/' %}
+    <link rel="stylesheet" href="/static/css/index.css">
+{% elif request.path == '/maternal_approaches' %}
+    <link rel="stylesheet" href="/static/css/maternal.css">
+{% elif request.path == '/dietplan' %}
+    <link rel="stylesheet" href="/static/css/dietplan.css">
+{% elif request.path == '/products' %}
+    <link rel="stylesheet" href="/static/css/product.css">
+{% elif request.path == '/doctor_consultation' %}
+    <link rel="stylesheet" href="/static/css/booking.css">
+{% elif request.path == '/exercises' %}
+    <link rel="stylesheet" href="/static/css/exercise.css">
+{% elif request.path == '/maternal_approaches' %}
+    <link rel="stylesheet" href="/static/css/maternal.css">
+{% endif %}
+    
+<div class="container">
+    
+    <aside class="sidebar">
+      <div class="logo">Motherly <span>MomCare</span></div>
+      <nav class="sidebar-nav">
+        <a href="{{ url_for('views.introduction') }}" {% if request.path == '/introduction' %} class="active" {% endif %}>🏠 Introduction</a>
+        <a href="{{ url_for('views.maternal_approaches') }}" {% if request.path == '/maternal_approaches' %} class="active" {% endif %}>👩‍🍼 Maternal Approaches</a>
+        <a href="{{ url_for('views.dietplan') }}" {% if request.path == '/dietplan' %} class="active" {% endif %}>🥗 Diet Plan</a>
+        <a href="{{ url_for('views.products') }}" {% if request.path == '/products' %} class="active" {% endif %}>👶 Baby Care</a>
+        <a href="{{ url_for('views.doctor_consultation') }}" {% if request.path == '/doctor_consultation' %} class="active" {% endif %}>🩺 Consult a doctor</a>
+        <a href="{{ url_for('views.exercises') }}" {% if request.path == '/exercises' %} class="active" {% endif %}>🏃‍♀ Exercises</a>
+      </nav>
+    </aside>
+  
+    <main class="main-content">
+      <header class="top-nav">
+        <div class="nav-links">
+          <a href="{{ url_for('views.introduction') }}">Home</a>
+          <a href="{{ url_for('views.doctor_consultation') }}">Appointments</a>
+          <a href="{{ url_for('views.products') }}">Shop</a>
+          <a href="{{ url_for('views.dietplan') }}">Dietplan</a>
+        </div>
+        <button class="login-button">Login</button>
+      </header>
+
+      {% block main%}
+
+      {% endblock %}
+
+    </main>
+    <!-- <footer class="footer">
+        <p>© 2025 MomCare. All rights reserved.</p>
+    </footer> -->
+</body>
+</html>

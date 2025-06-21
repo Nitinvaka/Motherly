@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+{% block title %} MomCare - Exercises {% endblock %}
+
+{% block main%}
+<link rel="stylesheet" href="/static/css/exercise.css">
+<section class="content">
+  <h1>Exercises</h1>
+  <p class="description">
+    Stay fit and healthy during and after pregnancy with our selection of safe, effective exercises designed specifically for mothers at different stages.
+  </p>
+
+  <div class="filter-buttons">
+    <button class="active">Prenatal</button>
+    <button>Postnatal</button>
+    <button>With Baby</button>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/4N4xUOwZVLM?si=A8quimTDXIeZcuf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="card-body">
+        <span class="level">Level: Beginner</span>
+        <h2>Gentle Stretching</h2>
+        <p>Gentle stretches to relieve tension and improve flexibility during pregnancy.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ilg-gQY2Rxc?si=RyUiNEtF98yHGqZz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="card-body">
+        <span class="level">Level: All Levels</span>
+        <h2>Pelvic Floor Exercises</h2>
+        <p>Exercises to strengthen pelvic floor muscles in preparation for delivery.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/zmUJWKM98hM?si=ENHuD9C7IyZM0yNS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="card-body">
+        <span class="level">Level: Intermediate</span>
+        <h2>Prenatal Yoga</h2>
+        <p>Yoga poses modified for pregnancy to improve strength, flexibility and relaxation.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="personalized-plan">
+    <h3>Personalized Exercise Plan</h3>
+    <p>Get a customized exercise program based on your fitness level, stage of pregnancy or postpartum recovery, and specific needs.</p>
+    <button class="plan-button">Create My Exercise Plan</button>
+  </div>
+
+</section>
+{% endblock %}

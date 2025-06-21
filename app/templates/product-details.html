@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - MomCare</title>
+  <link rel="stylesheet" href="/static/css/product-detail.css">
+</head>
+<body>
+
+<!-- Overlay Background -->
+<div class="overlay">
+  <!-- Modal Popup -->
+  <div class="modal">
+    <div class="modal-header">
+      <h2>{{ main[0] }}</h2>
+      <button class="close-btn">&times;</button>
+    </div>
+
+    <p class="modal-subtitle">{{ main[1] }}</p>
+
+    <div class="modal-content">
+      {% for point in para %}
+      <div class="step">
+        <h3>{{point[0]}}</h3>
+        <p>{{point[1]}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
